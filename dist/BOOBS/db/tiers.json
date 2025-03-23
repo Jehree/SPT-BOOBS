@@ -1,0 +1,248 @@
+{
+    "GRENADES": {
+        "type": "LOOSE_ITEM",
+        "low": ["M18", "RDG-2B", "M7290", "ZARYA"],
+        "medium": ["F1", "M67", "RGD-5"],
+        "high": ["RGN", "RGO", "VOG17", "VOG25"]
+    },
+    "UGL": {
+        "type": "LOOSE_ITEM",
+        "low": ["40x46_M576-SHOT"],
+        "medium": ["40x46_M386-HE", "40x46_M406-HE", "40x46_M433-HEDP"],
+        "high": ["40x46_M381-HE", "40x46_M441-HE", "40x53_VOG25"]
+    },
+    "FLARES": {
+        "type": "LOOSE_ITEM",
+        "low": ["26x75_POISONGREEN", "26x75_WHITE", "26x75_YELLOW", "RSP-30_YELLOW"],
+        "medium": ["26x75_GREEN", "RSP-30_GREEN", "RSP-30_YELLOW_SPECIAL"],
+        "high": ["26x75_RED", "RSP-30_RED", "RSP-30_BLUE"]
+    },
+
+    "45": {
+        "type": "DEFAULT",
+        "crap": ["45_LASERMATCHFMJ"],
+        "flesh_medium": ["45_HYDRASHOK"],
+        "flesh_high": ["45_RIP"],
+        "pen_medium": ["45_MATCHFMJ"],
+        "pen_high": ["45_AP"],
+        "pen_veryhigh": []
+    },
+    "357": {
+        "type": "DEFAULT",
+        "crap": [],
+        "flesh_medium": ["357_HP"],
+        "flesh_high": ["357_SP"],
+        "pen_medium": ["357_JHP"],
+        "pen_high": ["357_FMJ"],
+        "pen_veryhigh": []
+    },
+    "7_62x25": {
+        "type": "DEFAULT",
+        "crap": ["7_62x25_AKBS", "7_62x25_FMJ43"],
+        "flesh_medium": ["7_62x25_LRNPC", "7_62x25_LRN"],
+        "flesh_high": [],
+        "pen_medium": ["7_62x25_P", "7_62x25_PT"],
+        "pen_high": ["7_62x25_PST"],
+        "pen_veryhigh": []
+    },
+    "9x18": {
+        "type": "DEFAULT",
+        "crap": ["9x18_P", "9x18_PSO", "9x18_PSGSPPO", "9x18_PRSGS", "9x18_PPE", "9x18_PPT", "9x18_PST"],
+        "flesh_medium": ["9x18_PSV", "9x18_RG028"],
+        "flesh_high": ["9x18_SP7", "9x18_SP8"],
+        "pen_medium": ["9x18_BZHT"],
+        "pen_high": ["9x18_PBM", "9x18_PSTM"],
+        "pen_veryhigh": []
+    },
+    "9x19": {
+        "type": "DEFAULT",
+        "crap": ["9x19_GT", "9x19_PSO", "9x19_M882"],
+        "flesh_medium": ["9x19_CCI"],
+        "flesh_high": ["9x19_RIP", "9x19_QUAKEMAKER"],
+        "pen_medium": ["9x19_PST"],
+        "pen_high": ["9x19_AP63"],
+        "pen_veryhigh": ["9x19_PBP"]
+    },
+    "9x21": {
+        "type": "DEFAULT",
+        "crap": ["9x21_P"],
+        "flesh_medium": ["9x21_PE"],
+        "flesh_high": [],
+        "pen_medium": ["9x21_PS", "9x21_7U4"],
+        "pen_high": ["9x21_BT"],
+        "pen_veryhigh": ["9x21_7N42"]
+    },
+    "4_6x30": {
+        "type": "DEFAULT",
+        "crap": [],
+        "flesh_medium": ["4_6x30_ACTION"],
+        "flesh_high": [],
+        "pen_medium": ["4_6x30_SUBSONIC", "4_6x30_JSP"],
+        "pen_high": ["4_6x30_FMJ"],
+        "pen_veryhigh": ["4_6x30_AP"]
+    },
+    "5_7x28": {
+        "type": "DEFAULT",
+        "crap": ["5_7x28_SS198LF"],
+        "flesh_medium": ["5_7x28_R37X"],
+        "flesh_high": ["5_7x28_R37F"],
+        "pen_medium": ["5_7x28_SS197SR"],
+        "pen_high": ["5_7x28_L191", "5_7x28_SB193"],
+        "pen_veryhigh": ["5_7x28_SS190"]
+    },
+    "5_45x39": {
+        "type": "DEFAULT",
+        "crap": ["5_45x39_PRS", "5_45x39_FMJ", "5_45x39_T"],
+        "flesh_medium": ["5_45x39_SP", "5_45x39_US"],
+        "flesh_high": ["5_45x39_HP"],
+        "pen_medium": ["5_45x39_BP", "5_45x39_PP", "5_45x39_PS"],
+        "pen_high": ["5_45x39_7N40", "5_45x39_BT"],
+        "pen_veryhigh": ["5_45x39_IGOLNIK", "5_45x39_BS"]
+    },
+    "5_56x45": {
+        "type": "DEFAULT",
+        "crap": ["5_56x45_FMJ", "5_56x45_M856", "5_56x45_M856", "5_56x45_MK318MOD0", "5_56x45_MK255MOD0"],
+        "flesh_medium": ["5_56x45_HP"],
+        "flesh_high": ["5_56x45_WARMAGEDDON"],
+        "pen_medium": ["5_56x45_M855", "5_56x45_M856A1"],
+        "pen_high": ["5_56x45_M855A1"],
+        "pen_veryhigh": ["5_56x45_M995", "5_56x45_SSAAP"]
+    },
+    "300blk": {
+        "type": "DEFAULT",
+        "crap": ["300blk_VMAX"],
+        "flesh_medium": [],
+        "flesh_high": ["300blk_WHISPER"],
+        "pen_medium": ["300blk_FMJ"],
+        "pen_high": ["300blk_M62"],
+        "pen_veryhigh": ["300blk_AP", "300blk_CBJ"]
+    },
+    "7_62x39": {
+        "type": "DEFAULT",
+        "crap": ["7_62x39_SP"],
+        "flesh_medium": ["7_62x39_HP"],
+        "flesh_high": [],
+        "pen_medium": ["7_62x39_T45M", "7_62x39_US", "7_62x39_FMJ"],
+        "pen_high": ["7_62x39_PS"],
+        "pen_veryhigh": ["7_62x39_MAIAP", "7_62x39_BP", "7_62x39_PP"]
+    },
+    "7_62x51": {
+        "type": "DEFAULT",
+        "crap": [],
+        "flesh_medium": [],
+        "flesh_high": ["7_62x51_ULTRANOSLER"],
+        "pen_medium": ["7_62x51_BCPFMJ", "7_62x51_TCWSP"],
+        "pen_high": ["7_62x51_M80", "7_62x51_M62"],
+        "pen_veryhigh": ["7_62x51_M993", "7_62x51_M61"]
+    },
+    "7_62x54R": {
+        "type": "DEFAULT",
+        "crap": ["7_62x54R_FMJ"],
+        "flesh_medium": ["7_62x54R_SPBT"],
+        "flesh_high": ["7_62x54R_HPBT"],
+        "pen_medium": ["7_62x54R_T46M", "7_62x54R_LPS"],
+        "pen_high": ["7_62x54R_BT", "7_62x54R_PS"],
+        "pen_veryhigh": ["7_62x54R_BSGS", "7_62x54R_SNB"]
+    },
+    "338lapua": {
+        "type": "DEFAULT",
+        "crap": [],
+        "flesh_medium": [],
+        "flesh_high": ["338lapua_TACX"],
+        "pen_medium": ["338lapua_UCW"],
+        "pen_high": ["338lapua_FMJ"],
+        "pen_veryhigh": ["338lapua_AP"]
+    },
+    "9x39": {
+        "type": "DEFAULT",
+        "crap": ["9x39_SP5", "9x39_FMJ"],
+        "flesh_medium": [],
+        "flesh_high": [],
+        "pen_medium": ["9x39_SPP"],
+        "pen_high": ["9x39_PAB9", "9x39_SP6"],
+        "pen_veryhigh": ["9x39_BP"]
+    },
+    "366tkm": {
+        "type": "DEFAULT",
+        "crap": ["366tkm_FMJ"],
+        "flesh_medium": [],
+        "flesh_high": ["366tkm_GEKSA"],
+        "pen_medium": ["366tkm_EKO"],
+        "pen_high": ["366tkm_AP"],
+        "pen_veryhigh": []
+    },
+    "12_7x55": {
+        "type": "DEFAULT",
+        "crap": [],
+        "flesh_medium": [],
+        "flesh_high": ["12_7x55_PS12A"],
+        "pen_medium": ["12_7x55_PS12"],
+        "pen_high": ["12_7x55_PS12B"],
+        "pen_veryhigh": []
+    },
+    "12x70": {
+        "type": "SHELL",
+        "crap": [
+            "12x70_525BUCK",
+            "12x70_7BUCK",
+            "12x70_GRIZZLYSLUG",
+            "12x70_COPPERSLUG",
+            "12x70_POLEVA3SLUG",
+            "12x70_SUPERFORMANCESLUG",
+            "12x70_SABOTSLUG",
+            "12x70_LEADSLUG"
+        ],
+        "flesh_medium": ["12x70_65BUCK"],
+        "flesh_high": ["12x70_MAGNUMBUCK", "12x70_RIPSLUG"],
+        "pen_medium": ["12x70_50BMGSLUG", "12x70_POLEVA6SLUG", "12x70_FTXSLUG"],
+        "pen_high": ["12x70_AP20SLUG", "12x70_FLECHETTE", "12x70_PIRANHA"],
+        "pen_veryhigh": []
+    },
+    "20x70": {
+        "type": "SHELL",
+        "crap": ["20x70_75BUCK", "20x70_56BUCK", "20x70_62BUCK"],
+        "flesh_medium": ["20x70_73BUCK", "20x70_POLEVA6SLUG", "20x70_POLEVA3SLUG"],
+        "flesh_high": ["20x70_DEVASTATORSLUG"],
+        "pen_medium": [],
+        "pen_high": [],
+        "pen_veryhigh": [],
+        "util": ["20x70_STAR"]
+    },
+    "23x75": {
+        "type": "SHELL",
+        "crap": [],
+        "flesh_medium": ["23x75_SHRAP25"],
+        "flesh_high": ["23x75_SHRAP10"],
+        "pen_medium": [],
+        "pen_high": ["23x75_BARRIKADASLUG"],
+        "pen_veryhigh": [],
+        "util": ["23x75_FLASH"]
+    },
+    "6_8x51": {
+        "type": "DEFAULT",
+        "crap": [],
+        "flesh_medium": [],
+        "flesh_high": [],
+        "pen_medium": ["6_8x51_FMJ"],
+        "pen_high": ["6_8x51_HYBRID"],
+        "pen_veryhigh": []
+    },
+    "50ae": {
+        "type": "DEFAULT",
+        "crap": [],
+        "flesh_medium": [],
+        "flesh_high": ["50ae_JHP", "50ae_HAWK"],
+        "pen_medium": ["50ae_COPPERSOLID"],
+        "pen_high": ["50ae_FMJ"],
+        "pen_veryhigh": []
+    },
+    "disk": {
+        "type": "DEFAULT",
+        "crap": ["disk"],
+        "flesh_medium": [],
+        "flesh_high": [],
+        "pen_medium": [],
+        "pen_high": [],
+        "pen_veryhigh": []
+    }
+}

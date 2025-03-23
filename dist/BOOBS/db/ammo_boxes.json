@@ -1,0 +1,1040 @@
+{
+    "45": [
+        {
+            "box_id": "45_MATCHFMJ",
+            "box_type": "SMALL",
+            "bullet_id": "5e81f423763d9f754677bf2e",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "45_AP",
+            "box_type": "SMALL",
+            "bullet_id": "5efb0cabfb3e451d70735af5",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "45_HYDRASHOK",
+            "box_type": "SMALL",
+            "bullet_id": "5efb0fc6aeb21837e749c801",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "45_LASERMATCHFMJ",
+            "box_type": "SMALL",
+            "bullet_id": "5efb0d4f4bc50b58e81710f3",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "45_RIP",
+            "box_type": "SMALL",
+            "bullet_id": "5ea2a8e200685063ec28c05a",
+            "bullet_count": 30
+        }
+    ],
+    "357": [
+        {
+            "box_id": "357_FMJ",
+            "box_type": "SMALL",
+            "bullet_id": "62330b3ed4dc74626d570b95",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "357_HP",
+            "box_type": "SMALL",
+            "bullet_id": "62330bfadc5883093563729b",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "357_JHP",
+            "box_type": "SMALL",
+            "bullet_id": "62330c18744e5e31df12f516",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "357_SP",
+            "box_type": "SMALL",
+            "bullet_id": "62330c40bdd19b369e1e53d1",
+            "bullet_count": 20
+        }
+    ],
+    "7_62x25": [
+        {
+            "box_id": "7_62x25_FMJ43",
+            "box_type": "SMALL",
+            "bullet_id": "5735ff5c245977640e39ba7e",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "7_62x25_LRN",
+            "box_type": "SMALL",
+            "bullet_id": "573601b42459776410737435",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "7_62x25_LRNPC",
+            "box_type": "SMALL",
+            "bullet_id": "573602322459776445391df1",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "7_62x25_P",
+            "box_type": "SMALL",
+            "bullet_id": "5736026a245977644601dc61",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "7_62x25_PST",
+            "box_type": "SMALL",
+            "bullet_id": "573603562459776430731618",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "7_62x25_PT",
+            "box_type": "SMALL",
+            "bullet_id": "573603c924597764442bd9cb",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "7_62x25_AKBS",
+            "box_type": "SMALL",
+            "bullet_id": "5735fdcd2459776445391d61",
+            "bullet_count": 40
+        }
+    ],
+    "9x18": [
+        {
+            "box_id": "9x18_BZHT",
+            "box_type": "SMALL",
+            "bullet_id": "573718ba2459775a75491131",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_P",
+            "box_type": "SMALL",
+            "bullet_id": "573719762459775a626ccbc1",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PSTM",
+            "box_type": "SMALL",
+            "bullet_id": "57371aab2459775a77142f22",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_RG028",
+            "box_type": "SMALL",
+            "bullet_id": "573720e02459776143012541",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_SP7",
+            "box_type": "SMALL",
+            "bullet_id": "57372140245977611f70ee91",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PRSGS",
+            "box_type": "SMALL",
+            "bullet_id": "57371eb62459776125652ac1",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_SP8",
+            "box_type": "SMALL",
+            "bullet_id": "5737218f245977612125ba51",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PBM",
+            "box_type": "SMALL",
+            "bullet_id": "573719df2459775a626ccbc2",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PPE",
+            "box_type": "SMALL",
+            "bullet_id": "57371b192459775a9f58a5e0",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PPT",
+            "box_type": "SMALL",
+            "bullet_id": "57371e4124597760ff7b25f1",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PSO",
+            "box_type": "SMALL",
+            "bullet_id": "57371f8d24597761006c6a81",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PST",
+            "box_type": "SMALL",
+            "bullet_id": "5737201124597760fc4431f1",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PSV",
+            "box_type": "SMALL",
+            "bullet_id": "5737207f24597760ff7b25f2",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x18_PSGSPPO",
+            "box_type": "SMALL",
+            "bullet_id": "57371f2b24597761224311f1",
+            "bullet_count": 40
+        }
+    ],
+    "9x19": [
+        {
+            "box_id": "9x19_PST",
+            "box_type": "SMALL",
+            "bullet_id": "56d59d3ad2720bdb418b4577",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x19_RIP",
+            "box_type": "SMALL",
+            "bullet_id": "5c0d56a986f774449d5de529",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x19_GT",
+            "box_type": "SMALL",
+            "bullet_id": "5c3df7d588a4501f290594e5",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x19_PBP",
+            "box_type": "SMALL",
+            "bullet_id": "5efb0da7a29a85116f6ea05f",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "9x19_CCI",
+            "box_type": "SMALL",
+            "bullet_id": "5a3c16fe86f77452b62de32a",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x19_QUAKEMAKER",
+            "box_type": "SMALL",
+            "bullet_id": "5efb0e16aeb21837e749c7ff",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x19_PSO",
+            "box_type": "SMALL",
+            "bullet_id": "58864a4f2459770fcc257101",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x19_AP63",
+            "box_type": "SMALL",
+            "bullet_id": "5c925fa22e221601da359b7b",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "9x19_M882",
+            "box_type": "SMALL",
+            "bullet_id": "64b7bbb74b75259c590fa897",
+            "bullet_count": 40
+        }
+    ],
+    "9x21": [
+        {
+            "box_id": "9x21_P",
+            "box_type": "SMALL",
+            "bullet_id": "5a26abfac4a28232980eabff",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "9x21_PE",
+            "box_type": "SMALL",
+            "bullet_id": "5a26ac06c4a282000c5a90a8",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "9x21_BT",
+            "box_type": "SMALL",
+            "bullet_id": "5a26ac0ec4a28200741e1e18",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "9x21_PS",
+            "box_type": "SMALL",
+            "bullet_id": "5a269f97c4a282000b151807",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "9x21_7N42",
+            "box_type": "SMALL",
+            "bullet_id": "6576f4708ca9c4381d16cd9d",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "9x21_7U4",
+            "box_type": "SMALL",
+            "bullet_id": "6576f93989f0062e741ba952",
+            "bullet_count": 30
+        }
+    ],
+    "4_6x30": [
+        {
+            "box_id": "4_6x30_ACTION",
+            "box_type": "SMALL",
+            "bullet_id": "5ba26812d4351e003201fef1",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "4_6x30_AP",
+            "box_type": "SMALL",
+            "bullet_id": "5ba26835d4351e0035628ff5",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "4_6x30_FMJ",
+            "box_type": "SMALL",
+            "bullet_id": "5ba2678ad4351e44f824b344",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "4_6x30_SUBSONIC",
+            "box_type": "SMALL",
+            "bullet_id": "5ba26844d4351e00334c9475",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "4_6x30_JSP",
+            "box_type": "SMALL",
+            "bullet_id": "64b6979341772715af0f9c39",
+            "bullet_count": 30
+        }
+    ],
+    "5_7x28": [
+        {
+            "box_id": "5_7x28_L191",
+            "box_type": "SMALL",
+            "bullet_id": "5cc80f53e4a949000e1ea4f8",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "5_7x28_R37F",
+            "box_type": "SMALL",
+            "bullet_id": "5cc86832d7f00c000d3a6e6c",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "5_7x28_R37X",
+            "box_type": "SMALL",
+            "bullet_id": "5cc86840d7f00c002412c56c",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "5_7x28_SB193",
+            "box_type": "SMALL",
+            "bullet_id": "5cc80f67e4a949035e43bbba",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "5_7x28_SS190",
+            "box_type": "SMALL",
+            "bullet_id": "5cc80f38e4a949001152b560",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "5_7x28_SS197SR",
+            "box_type": "SMALL",
+            "bullet_id": "5cc80f8fe4a949033b0224a2",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "5_7x28_SS198LF",
+            "box_type": "SMALL",
+            "bullet_id": "5cc80f79e4a949033c7343b2",
+            "bullet_count": 30
+        }
+    ],
+    "5_45x39": [
+        {
+            "box_id": "5_45x39_PS",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff3afd2720bba668b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_BS",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff026d2720bb8668b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff0bed2720bb0668b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_PP",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff2ced2720bb4668b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_PRS",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff338d2720bbd668b4569",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_BP",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dfef82d2720bbd668b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_T",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff4a2d2720bbd668b456a",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_US",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff4ecd2720b5f5a8b4568",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_SP",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff421d2720b5f5a8b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_BT",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff061d2720bb5668b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_HP",
+            "box_type": "MEDIUM",
+            "bullet_id": "56dff216d2720bbd668b4568",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_IGOLNIK",
+            "box_type": "MEDIUM",
+            "bullet_id": "5c0d5e4486f77478390952fe",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_45x39_7N40",
+            "box_type": "MEDIUM",
+            "bullet_id": "61962b617c6c7b169525f168",
+            "bullet_count": 60
+        }
+    ],
+    "5_56x45": [
+        {
+            "box_id": "5_56x45_M855",
+            "box_type": "MEDIUM",
+            "bullet_id": "54527a984bdc2d4e668b4567",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_56x45_SSAAP",
+            "box_type": "MEDIUM",
+            "bullet_id": "601949593ae8f707c4608daa",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "5_56x45_WARMAGEDDON",
+            "box_type": "MEDIUM",
+            "bullet_id": "5c0d5ae286f7741e46554302",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_56x45_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e6920f86f77411d82aa167",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_56x45_HP",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e6927d86f77411da468256",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_56x45_M855A1",
+            "box_type": "MEDIUM",
+            "bullet_id": "54527ac44bdc2d36668b4567",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "5_56x45_M856",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e68f6f86f7746c9f75e846",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_56x45_M856A1",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e6906286f7746c9f75e847",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_56x45_M995",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e690b686f7746c9f75e848",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "5_56x45_MK255MOD0",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e6918f86f7746c9f75e849",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "5_56x45_MK318MOD0",
+            "box_type": "MEDIUM",
+            "bullet_id": "60194943740c5d77f6705eea",
+            "bullet_count": 60
+        }
+    ],
+    "300blk": [
+        {
+            "box_id": "300blk_AP",
+            "box_type": "MEDIUM",
+            "bullet_id": "5fd20ff893a8961fc660a954",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "300blk_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "5fbe3ffdf8b6a877a729ea82",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "300blk_M62",
+            "box_type": "MEDIUM",
+            "bullet_id": "619636be6db0f2477964e710",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "300blk_VMAX",
+            "box_type": "MEDIUM",
+            "bullet_id": "6196364158ef8c428c287d9f",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "300blk_WHISPER",
+            "box_type": "MEDIUM",
+            "bullet_id": "6196365d58ef8c428c287da1",
+            "bullet_count": 60
+        },
+        {
+            "box_id": "300blk_CBJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "64b8725c4b75259c590fa899",
+            "bullet_count": 60
+        }
+    ],
+    "7_62x39": [
+        {
+            "box_id": "7_62x39_PS",
+            "box_type": "MEDIUM",
+            "bullet_id": "5656d7c34bdc2d9d198b4587",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "7_62x39_MAIAP",
+            "box_type": "MEDIUM",
+            "bullet_id": "601aa3d2b2bcb34913271e6d",
+            "bullet_count": 40
+        },
+        {
+            "box_id": "7_62x39_T45M",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e4cf5286f7741778269d8a",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "7_62x39_US",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e4d24686f7741776641ac7",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "7_62x39_BP",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e0d99486f7744a32234762",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "7_62x39_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "64b7af5a8532cf95ee0a0dbd",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "7_62x39_SP",
+            "box_type": "MEDIUM",
+            "bullet_id": "64b7af734b75259c590fa895",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "7_62x39_PP",
+            "box_type": "MEDIUM",
+            "bullet_id": "64b7af434b75259c590fa893",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "7_62x39_HP",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e4d3d286f774176a36250a",
+            "bullet_count": 50
+        }
+    ],
+    "7_62x51": [
+        {
+            "box_id": "7_62x51_M993",
+            "box_type": "MEDIUM",
+            "bullet_id": "5efb0c1bd79ff02a1f5e68d9",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "7_62x51_M61",
+            "box_type": "MEDIUM",
+            "bullet_id": "5a6086ea4f39f99cd479502f",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "7_62x51_M80",
+            "box_type": "MEDIUM",
+            "bullet_id": "58dd3ad986f77403051cba8f",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "7_62x51_ULTRANOSLER",
+            "box_type": "MEDIUM",
+            "bullet_id": "5e023e88277cce2b522ff2b1",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "7_62x51_TCWSP",
+            "box_type": "MEDIUM",
+            "bullet_id": "5e023e6e34d52a55c3304f71",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "7_62x51_M62",
+            "box_type": "MEDIUM",
+            "bullet_id": "5a608bf24f39f98ffc77720e",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "7_62x51_BCPFMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "5e023e53d4353e3302577c4c",
+            "bullet_count": 30
+        }
+    ],
+    "7_62x54R": [
+        {
+            "box_id": "7_62x54R_SNB",
+            "box_type": "LARGE",
+            "bullet_id": "560d61e84bdc2da74d8b4571",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_BSGS",
+            "box_type": "LARGE",
+            "bullet_id": "5e023d48186a883be655e551",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_BT",
+            "box_type": "LARGE",
+            "bullet_id": "5e023d34e8a400319a28ed44",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_T46M",
+            "box_type": "LARGE",
+            "bullet_id": "5e023cf8186a883be655e54f",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_LPS",
+            "box_type": "LARGE",
+            "bullet_id": "5887431f2459777e1612938f",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_PS",
+            "box_type": "LARGE",
+            "bullet_id": "59e77a2386f7742ee578960a",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_FMJ",
+            "box_type": "LARGE",
+            "bullet_id": "64b8f7968532cf95ee0a0dbf",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_HPBT",
+            "box_type": "LARGE",
+            "bullet_id": "64b8f7c241772715af0f9c3d",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "7_62x54R_SPBT",
+            "box_type": "LARGE",
+            "bullet_id": "64b8f7b5389d7ffd620ccba2",
+            "bullet_count": 20
+        }
+    ],
+    "338lapua": [
+        {
+            "box_id": "338lapua_AP",
+            "box_type": "LAPUA",
+            "bullet_id": "5fc382a9d724d907e2077dab",
+            "bullet_count": 15
+        },
+        {
+            "box_id": "338lapua_UCW",
+            "box_type": "LAPUA",
+            "bullet_id": "5fc382c1016cce60e8341b20",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "338lapua_TACX",
+            "box_type": "LAPUA",
+            "bullet_id": "5fc382b6d6fa9c00c571bbc3",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "338lapua_FMJ",
+            "box_type": "LAPUA",
+            "bullet_id": "5fc275cf85fd526b824a571a",
+            "bullet_count": 20
+        }
+    ],
+    "9x39": [
+        {
+            "box_id": "9x39_BP",
+            "box_type": "MEDIUM",
+            "bullet_id": "5c0d688c86f77413ae3407b2",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "9x39_SPP",
+            "box_type": "MEDIUM",
+            "bullet_id": "5c0d668f86f7747ccb7f13b2",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "9x39_SP5",
+            "box_type": "MEDIUM",
+            "bullet_id": "57a0dfb82459774d3078b56c",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "9x39_PAB9",
+            "box_type": "MEDIUM",
+            "bullet_id": "61962d879bb3d20b0946d385",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "9x39_SP6",
+            "box_type": "MEDIUM",
+            "bullet_id": "57a0e5022459774d1673f889",
+            "bullet_count": 45
+        },
+        {
+            "box_id": "9x39_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "6576f96220d53a5b8f3e395e",
+            "bullet_count": 45
+        }
+    ],
+    "366tkm": [
+        {
+            "box_id": "366tkm_EKO",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e655cb86f77411dc52a77b",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "366tkm_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e6542b86f77411dc52a77a",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "366tkm_GEKSA",
+            "box_type": "MEDIUM",
+            "bullet_id": "59e6658b86f77411d949b250",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "366tkm_AP",
+            "box_type": "MEDIUM",
+            "bullet_id": "5f0596629e22f464da6bbdd9",
+            "bullet_count": 40
+        }
+    ],
+    "12_7x55": [
+        {
+            "box_id": "12_7x55_PS12B",
+            "box_type": "LARGE",
+            "bullet_id": "5cadf6eeae921500134b2799",
+            "bullet_count": 18
+        },
+        {
+            "box_id": "12_7x55_PS12",
+            "box_type": "LARGE",
+            "bullet_id": "5cadf6ddae9215051e1c23b2",
+            "bullet_count": 18
+        },
+        {
+            "box_id": "12_7x55_PS12A",
+            "box_type": "LARGE",
+            "bullet_id": "5cadf6e5ae921500113bb973",
+            "bullet_count": 18
+        }
+    ],
+    "12x70": [
+        {
+            "box_id": "12x70_RIPSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5c0d591486f7744c505b416f",
+            "bullet_count": 15
+        },
+        {
+            "box_id": "12x70_AP20SLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e68a8a4b9360b6c0d54e2",
+            "bullet_count": 15
+        },
+        {
+            "box_id": "12x70_7BUCK",
+            "box_type": "SHELL",
+            "bullet_id": "560d5e524bdc2d25448b4571",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_525BUCK",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6772a4b936088465b17c",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_65BUCK",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e67fba4b9361bc73bc779",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_MAGNUMBUCK",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6806a4b936088465b17e",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "12x70_SABOTSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e68dea4b9361bcc29e659",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_FLECHETTE",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6911a4b9361bd5780d52",
+            "bullet_count": 20
+        },
+        {
+            "box_id": "12x70_LEADSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "58820d1224597753c90aeb13",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_50BMGSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e68c4a4b9361b93413f79",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_FTXSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e68e6a4b9361c140bcfe0",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_GRIZZLYSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6869a4b9361c140bcfde",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_COPPERSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e68b3a4b9361bca7e50b5",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_POLEVA3SLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6891a4b9361bd473feea",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_POLEVA6SLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e689ca4b9361bc8618956",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_SUPERFORMANCESLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e68d1a4b93622fe60e845",
+            "bullet_count": 25
+        },
+        {
+            "box_id": "12x70_PIRANHA",
+            "box_type": "SHELL",
+            "bullet_id": "64b8ee384b75259c590fa89b",
+            "bullet_count": 25
+        }
+    ],
+    "20x70": [
+        {
+            "box_id": "20x70_75BUCK",
+            "box_type": "SHELL",
+            "bullet_id": "5a38ebd9c4a282000d722a5b",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "20x70_56BUCK",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e695fa4b936359b35d852",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "20x70_62BUCK",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e69b9a4b9361bc8618958",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "20x70_73BUCK",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e69c7a4b9360b6c0d54e4",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "20x70_DEVASTATORSLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6a5fa4b93614ec501745",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "20x70_POLEVA3SLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6a53a4b9361bd473feec",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "20x70_POLEVA6SLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6a42a4b9364f07165f52",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "20x70_STAR",
+            "box_type": "SHELL",
+            "bullet_id": "5d6e6a05a4b93618084f58d0",
+            "bullet_count": 30
+        }
+    ],
+    "23x75": [
+        {
+            "box_id": "23x75_BARRIKADASLUG",
+            "box_type": "SHELL",
+            "bullet_id": "5e85aa1a988a8701445df1f5",
+            "bullet_count": 10
+        },
+        {
+            "box_id": "23x75_SHRAP10",
+            "box_type": "SHELL",
+            "bullet_id": "5e85a9a6eacf8c039e4e2ac1",
+            "bullet_count": 8
+        },
+        {
+            "box_id": "23x75_SHRAP25",
+            "box_type": "SHELL",
+            "bullet_id": "5f647f31b6238e5dd066e196",
+            "bullet_count": 8
+        },
+        {
+            "box_id": "23x75_FLASH",
+            "box_type": "SHELL",
+            "bullet_id": "5e85a9f4add9fe03027d9bf1",
+            "bullet_count": 10
+        }
+    ],
+    "6_8x51": [
+        {
+            "box_id": "6_8x51_HYBRID",
+            "box_type": "MEDIUM",
+            "bullet_id": "6529243824cbe3c74a05e5c1",
+            "bullet_count": 50
+        },
+        {
+            "box_id": "6_8x51_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "6529302b8c26af6326029fb7",
+            "bullet_count": 50
+        }
+    ],
+    "50ae": [
+        {
+            "box_id": "50ae_FMJ",
+            "box_type": "MEDIUM",
+            "bullet_id": "668fe62ac62660a5d8071446",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "50ae_JHP",
+            "box_type": "MEDIUM",
+            "bullet_id": "66a0d1c87d0d369e270bb9de",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "50ae_COPPERSOLID",
+            "box_type": "MEDIUM",
+            "bullet_id": "66a0d1e0ed648d72fe064d06",
+            "bullet_count": 30
+        },
+        {
+            "box_id": "50ae_HAWK",
+            "box_type": "MEDIUM",
+            "bullet_id": "66a0d1f88486c69fce00fdf6",
+            "bullet_count": 30
+        }
+    ],
+    "disk": [
+        {
+            "box_id": "disk",
+            "box_type": "LARGE",
+            "bullet_id": "6601546f86889319850bd566",
+            "bullet_count": 100
+        }
+    ]
+}
