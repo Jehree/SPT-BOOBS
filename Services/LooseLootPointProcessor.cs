@@ -35,7 +35,7 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
             });
         }
     }
-    private List<Spawnpoint> GetProcessedMapSpawnpoints(List<Spawnpoint> spawnpoints, Dictionary<string, double> itemWeights)
+    private IEnumerable<Spawnpoint> GetProcessedMapSpawnpoints(List<Spawnpoint> spawnpoints, Dictionary<string, double> itemWeights)
     {
         foreach (Spawnpoint point in spawnpoints)
         {
@@ -46,26 +46,30 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
             point.Template.Items = [];
             point.ItemDistribution = [];
 
+            List<SptLootItem> pointItems = point.Template.Items.ToList();
+            List<LooseLootItemDistribution> itemDistribution = point.ItemDistribution.ToList();
 
             foreach (var (caliberName, boxes) in ConfigContainer.AmmoBoxDb)
             {
                 foreach (AmmoBox box in boxes)
                 {
-                    point.Template.Items = [.. point.Template.Items, .. BuildSpawnpointItems(box, out MongoId pointId)];
-                    point.ItemDistribution = [.. point.ItemDistribution, BuildItemDistribution(pointId, itemWeights[box.BoxId])];
+                    pointItems.AddRange(BuildSpawnpointItems(box, out MongoId pointId));
+                    itemDistribution.Add(BuildItemDistribution(pointId, itemWeights[box.BoxId]));
                 }
             }
 
-            foreach (var (categoryName, items) in ConfigContainer.LooseItemDb)
+            foreach (var (categoryName, looseItems) in ConfigContainer.LooseItemDb)
             {
-                foreach (var (itemName, itemId) in items)
+                foreach (var (itemName, itemId) in looseItems)
                 {
-                    point.Template.Items = [.. point.Template.Items, .. BuildSpawnpointItems(itemId, out MongoId pointId)];
-                    point.ItemDistribution = [.. point.ItemDistribution, BuildItemDistribution(pointId, itemWeights[itemName])];
+                    pointItems.AddRange(BuildSpawnpointItems(itemId, out MongoId pointId));
+                    itemDistribution.Add(BuildItemDistribution(pointId, itemWeights[itemName]));
                 }
             }
-        }
 
+            point.Template.Items = pointItems;
+            point.ItemDistribution = itemDistribution;
+        }
         
         return spawnpoints;
     }
@@ -92,7 +96,6 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
             {
                 Id = pointId,
                 Template = ConfigContainer.MongoMappings[box.BoxId]
-
             },
             new SptLootItem
             {
