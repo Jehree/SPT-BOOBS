@@ -1,61 +1,69 @@
 {
-    "spawnpoint_item_blacklist": ["5c164d2286f774194c5e69fa", "5c99f98d86f7745c314214b3", "5795f317245977243854e041", "5671435f4bdc2d96058b4569"],
+    "SpawnpointItemBlacklist": [ "5c164d2286f774194c5e69fa", "5c99f98d86f7745c314214b3", "5795f317245977243854e041", "5671435f4bdc2d96058b4569" ],
 
-    "global_spawn_chance_multiplier": 1,
+    "GlobalSpawnChanceMultiplier": 1,
 
-    "weight_multipliers": {
-        "LOOSE_ITEM": {
-            "low": 1,
-            "medium": 0.6,
-            "high": 0.2
+    "CaliberWeightMultipliers": {
+        "Grenades": 0.4,
+        "UGL": 0.1,
+        "Flares": 0.2,
+        "7_62x25": 0.7,
+        "7_62x39": 1,
+        "7_62x51": 0.8,
+        "7_62x54R": 0.8,
+        "6_8x51": 0.8,
+        "9x18": 0.7,
+        "9x19": 1,
+        "9x21": 1,
+        "9x39": 1,
+        "357": 0.8,
+        "45": 1,
+        "4_6x30": 1,
+        "5_7x28": 1,
+        "5_45x39": 1,
+        "5_56x45": 1,
+        "300blk": 1,
+        "338lapua": 0.3,
+        "366tkm": 1,
+        "12_7x55": 0.6,
+        "12x70": 1,
+        "20x70": 0.7,
+        "23x75": 1,
+        "50ae": 0.8,
+        "Disk": 0.05
+    },
+
+    "CategoryWeightMultipliers":
+    [
+        {
+            "Type": "LooseItem",
+            "Multipliers": {
+                "Low": 1,
+                "Medium": 0.6,
+                "High": 0.2
+            }
         },
-
-        "SHELL": {
-            "crap": 1,
-            "pen_medium": 0.8,
-            "flesh_medium": 0.6,
-            "flesh_high": 0.3,
-            "pen_high": 0.3,
-            "util": 0.1
+        {
+            "Type": "Shell",
+            "Multipliers": {
+                "Crap": 1,
+                "PenMedium": 0.8,
+                "FleshMedium": 0.6,
+                "FleshHigh": 0.3,
+                "PenHigh": 0.3,
+                "Util": 0.1
+            }
         },
-
-        "DEFAULT": {
-            "crap": 1,
-            "flesh_medium": 0.8,
-            "flesh_high": 0.6,
-            "pen_medium": 0.5,
-            "pen_high": 0.2,
-            "pen_veryhigh": 0.1
-        },
-
-        "CATEGORIES": {
-            "GRENADES": 0.4,
-            "UGL": 0.1,
-            "FLARES": 0.2,
-            "7_62x25": 0.7,
-            "7_62x39": 1,
-            "7_62x51": 0.8,
-            "7_62x54R": 0.8,
-            "6_8x51": 0.8,
-            "9x18": 0.7,
-            "9x19": 1,
-            "9x21": 1,
-            "9x39": 1,
-            "357": 0.8,
-            "45": 1,
-            "4_6x30": 1,
-            "5_7x28": 1,
-            "5_45x39": 1,
-            "5_56x45": 1,
-            "300blk": 1,
-            "338lapua": 0.3,
-            "366tkm": 1,
-            "12_7x55": 0.6,
-            "12x70": 1,
-            "20x70": 0.7,
-            "23x75": 1,
-            "50ae": 0.8,
-            "disk": 0.05
+        {
+            "Type": "Default",
+            "Multipliers": {
+                "Crap": 1,
+                "FleshMedium": 0.8,
+                "FleshHigh": 0.6,
+                "PenMedium": 0.5,
+                "PenHigh": 0.2,
+                "PenVeryHigh": 0.1
+            }
         }
-    }
+    ]
 }

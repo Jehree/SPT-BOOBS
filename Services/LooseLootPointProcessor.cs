@@ -1,0 +1,149 @@
+using Boobs.Models;
+using SPTarkov.DI.Annotations;
+using SPTarkov.Server.Core.Models.Common;
+using SPTarkov.Server.Core.Models.Eft.Common;
+using SPTarkov.Server.Core.Models.Eft.Common.Tables;
+using SPTarkov.Server.Core.Models.Utils;
+using SPTarkov.Server.Core.Services;
+using System.Drawing;
+
+namespace Boobs.Services;
+
+[Injectable]
+public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger<LooseLootPointProcessor> logger)
+{
+    public required ConfigContainer ConfigContainer { get; set; }
+
+    public void InitConfigs(ConfigContainer configContainer)
+    {
+        ConfigContainer = configContainer;
+    }
+
+    public void ProcessSpawnpoints(Dictionary<string, double> itemWeights)
+    {
+        foreach (var (locationId, location) in databaseService.GetLocations().GetDictionary())
+        {
+            if (location.LooseLoot is null) continue;
+
+            location.LooseLoot.AddTransformer(looseLootData =>
+            {
+                if (looseLootData?.Spawnpoints is null) return looseLootData;
+
+                looseLootData.Spawnpoints = GetProcessedMapSpawnpoints([..looseLootData.Spawnpoints], itemWeights);
+                
+                return looseLootData;
+            });
+        }
+    }
+    private List<Spawnpoint> GetProcessedMapSpawnpoints(List<Spawnpoint> spawnpoints, Dictionary<string, double> itemWeights)
+    {
+        foreach (Spawnpoint point in spawnpoints)
+        {
+            if (!SpawnpointIsTarget(point)) continue;
+
+            point.Probability *= ConfigContainer.Config.GlobalSpawnChanceMultiplier;
+            if (point.Template is null) continue;
+            point.Template.Items = [];
+            point.ItemDistribution = [];
+
+
+            foreach (var (caliberName, boxes) in ConfigContainer.AmmoBoxDb)
+            {
+                foreach (AmmoBox box in boxes)
+                {
+                    point.Template.Items = [.. point.Template.Items, .. BuildSpawnpointItems(box, out MongoId pointId)];
+                    point.ItemDistribution = [.. point.ItemDistribution, BuildItemDistribution(pointId, itemWeights[box.BoxId])];
+                }
+            }
+
+            foreach (var (categoryName, items) in ConfigContainer.LooseItemDb)
+            {
+                foreach (var (itemName, itemId) in items)
+                {
+                    point.Template.Items = [.. point.Template.Items, .. BuildSpawnpointItems(itemId, out MongoId pointId)];
+                    point.ItemDistribution = [.. point.ItemDistribution, BuildItemDistribution(pointId, itemWeights[itemName])];
+                }
+            }
+        }
+
+        
+        return spawnpoints;
+    }
+
+    private LooseLootItemDistribution BuildItemDistribution(MongoId pointId, double weight)
+    {
+        return new LooseLootItemDistribution
+        {
+            ComposedKey = new ComposedKey
+            {
+                Key = pointId,
+            },
+            RelativeProbability = weight
+        };
+    }
+
+    private List<SptLootItem> BuildSpawnpointItems(AmmoBox box, out MongoId pointId)
+    {
+        pointId = new();
+
+        return
+        [
+            new SptLootItem
+            {
+                Id = pointId,
+                Template = ConfigContainer.MongoMappings[box.BoxId]
+
+            },
+            new SptLootItem
+            {
+                Id = new MongoId(),
+                ParentId = pointId,
+                Template = box.BulletId,
+                SlotId = "cartridges",
+                Upd = new Upd
+                {
+                    StackObjectsCount = box.BulletCount
+                }
+            }
+        ];
+    }
+
+    private List<SptLootItem> BuildSpawnpointItems(MongoId itemId, out MongoId pointId)
+    {
+        pointId = new();
+
+        return
+        [
+            new SptLootItem
+            {
+                Id = pointId,
+                Template = itemId
+            }
+        ];
+    }
+
+    private bool SpawnpointIsTarget(Spawnpoint spawnpoint)
+    {
+        if (spawnpoint.Template is null) return false;
+        bool spawnsAmmo = false;
+
+        IEnumerable<SptLootItem>? items = spawnpoint.Template.Items;
+        if (items is null) return false;
+        foreach (SptLootItem item in items)
+        {
+            MongoId parentId = databaseService.GetItems().First(i => i.Value.Id == item.Template).Value.Parent;
+            if (ConfigContainer.Config.SpawnpointItemBlacklist.Contains(item.Template)) return false;
+            if (ConfigContainer.Config.SpawnpointItemBlacklist.Contains(parentId)) return false;
+
+            if (parentId == BaseClasses.AMMO_BOX)
+            {
+                spawnsAmmo = true;
+            }
+        }
+
+        return spawnsAmmo;
+        // In order for a spawnpoint to be a target, it must:
+        // Be able to spawn an ammo box normally
+        // NOT be able to spawn any items on the blacklist, or any children of any items on the blacklist
+    }
+}

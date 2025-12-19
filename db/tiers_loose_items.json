@@ -1,0 +1,33 @@
+{
+    "Categories":
+    [
+        {
+            "Name": "Grenades",
+            "Type": "LooseItem",
+            "Tiers": {
+                "Low": ["M18", "RDG-2B", "M7290", "ZARYA"],
+                "Medium": ["F1", "M67", "RGD-5"],
+                "High": ["RGN", "RGO", "VOG17", "VOG25"]
+            }
+        },
+        {
+
+            "Name": "UGL",
+            "Type": "LooseItem",
+            "Tiers": {
+                "Low": ["40x46_M576-SHOT"],
+                "Medium": ["40x46_M386-HE", "40x46_M406-HE", "40x46_M433-HEDP"],
+                "High": ["40x46_M381-HE", "40x46_M441-HE", "40x53_VOG25"]
+            }
+        },
+        {
+            "Name": "Flares",
+            "Type": "LooseItem",
+            "Tiers": {
+                "Low": ["26x75_POISONGREEN", "26x75_WHITE", "26x75_YELLOW", "RSP-30_YELLOW"],
+                "Medium": ["26x75_GREEN", "RSP-30_GREEN", "RSP-30_YELLOW_SPECIAL"],
+                "High": ["26x75_RED", "RSP-30_RED", "RSP-30_BLUE"]
+            }
+        }
+    ]
+}

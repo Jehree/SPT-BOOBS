@@ -1,0 +1,41 @@
+{
+    "Types":
+    [
+        {
+            "Type": "Default",
+            "BundlePath": "assets/content/items/ammo/boxes/item_ammo_box_545x39_30.bundle",
+            "SizeH": 1,
+            "SizeV": 1
+        },
+        {
+            "Type": "Small",
+            "BundlePath": "assets/content/items/ammo/boxes/item_ammo_box_9x18pm_16.bundle",
+            "SizeH": 1,
+            "SizeV": 1
+        },
+        {
+            "Type": "Medium",
+            "BundlePath": "assets/content/items/ammo/boxes/item_ammo_box_545x39_30.bundle",
+            "SizeH": 1,
+            "SizeV": 1
+        },
+        {
+            "Type": "Large",
+            "BundlePath": "assets/content/items/ammo/boxes/item_ammo_box_545x39_120_prs.bundle",
+            "SizeH": 2,
+            "SizeV": 1
+        },
+        {
+            "Type": "Shell",
+            "BundlePath": "assets/content/items/ammo/boxes/item_ammo_box_12g_rip_5.bundle",
+            "SizeH": 1,
+            "SizeV": 1
+        },
+        {
+            "Type": "Lapua",
+            "BundlePath": "assets/content/items/ammo/boxes/item_ammo_box_545x39_120_prs.bundle",
+            "SizeH": 3,
+            "SizeV": 1
+        }
+    ]
+}
