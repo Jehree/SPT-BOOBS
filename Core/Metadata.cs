@@ -1,8 +1,10 @@
 using SPTarkov.Server.Core.Models.Spt.Mod;
 
+namespace BOOBS.Core;
+
 public record ModMetadata : AbstractModMetadata
 {
-    public override string ModGuid { get; init; } = "com.jehree.boobs";
+    public override string ModGuid { get; init; } = "com.jehree.BOOBS";
     public override string Name { get; init; } = "BOOBS";
     public override string Author { get; init; } = "Jehree";
     public override List<string>? Contributors { get; init; }
@@ -10,7 +12,7 @@ public record ModMetadata : AbstractModMetadata
     public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
     public override List<string>? Incompatibilities { get; init; }
     public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
-    public override string? Url { get; init; } = "https://forge.sp-tarkov.com/mod/981/balanced-overhaul-of-bullet-spawns-boobs";
+    public override string? Url { get; init; } = "https://forge.sp-tarkov.com/mod/981/balanced-overhaul-of-bullet-spawns-BOOBS";
     public override bool? IsBundleMod { get; init; } = false;
     public override string License { get; init; } = "MIT";
 }

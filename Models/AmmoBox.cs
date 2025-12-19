@@ -1,4 +1,4 @@
-namespace Boobs.Models;
+namespace BOOBS.Models;
 
 public class AmmoBox
 {

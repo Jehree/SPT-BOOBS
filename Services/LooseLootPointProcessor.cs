@@ -1,16 +1,14 @@
-using Boobs.Models;
+using BOOBS.Models;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
-using SPTarkov.Server.Core.Models.Utils;
 using SPTarkov.Server.Core.Services;
-using System.Drawing;
 
-namespace Boobs.Services;
+namespace BOOBS.Services;
 
 [Injectable]
-public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger<LooseLootPointProcessor> logger)
+public class LooseLootPointProcessor(DatabaseService databaseService)
 {
     public required ConfigContainer ConfigContainer { get; set; }
 
@@ -29,25 +27,24 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
             {
                 if (looseLootData?.Spawnpoints is null) return looseLootData;
 
-                looseLootData.Spawnpoints = GetProcessedMapSpawnpoints([..looseLootData.Spawnpoints], itemWeights);
-                
+                ProcessMapSpawnpoints(looseLootData.Spawnpoints, itemWeights);
+
                 return looseLootData;
             });
         }
     }
-    private IEnumerable<Spawnpoint> GetProcessedMapSpawnpoints(List<Spawnpoint> spawnpoints, Dictionary<string, double> itemWeights)
+
+    private void ProcessMapSpawnpoints(IEnumerable<Spawnpoint> spawnpoints, Dictionary<string, double> itemWeights)
     {
         foreach (Spawnpoint point in spawnpoints)
         {
             if (!SpawnpointIsTarget(point)) continue;
+            if (point.Template is null) continue;
 
             point.Probability *= ConfigContainer.Config.GlobalSpawnChanceMultiplier;
-            if (point.Template is null) continue;
-            point.Template.Items = [];
-            point.ItemDistribution = [];
-
-            List<SptLootItem> pointItems = point.Template.Items.ToList();
-            List<LooseLootItemDistribution> itemDistribution = point.ItemDistribution.ToList();
+            
+            List<SptLootItem> pointItems = [];
+            List<LooseLootItemDistribution> itemDistribution = [];
 
             foreach (var (caliberName, boxes) in ConfigContainer.AmmoBoxDb)
             {
@@ -70,8 +67,6 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
             point.Template.Items = pointItems;
             point.ItemDistribution = itemDistribution;
         }
-        
-        return spawnpoints;
     }
 
     private LooseLootItemDistribution BuildItemDistribution(MongoId pointId, double weight)
@@ -95,12 +90,14 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
             new SptLootItem
             {
                 Id = pointId,
-                Template = ConfigContainer.MongoMappings[box.BoxId]
+                ComposedKey = pointId,
+                Template = ConfigContainer.MongoMappings[box.BoxId],
             },
             new SptLootItem
             {
                 Id = new MongoId(),
                 ParentId = pointId,
+                ComposedKey = pointId,
                 Template = box.BulletId,
                 SlotId = "cartridges",
                 Upd = new Upd
@@ -120,6 +117,7 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
             new SptLootItem
             {
                 Id = pointId,
+                ComposedKey = pointId,
                 Template = itemId
             }
         ];
@@ -132,6 +130,7 @@ public class LooseLootPointProcessor(DatabaseService databaseService, ISptLogger
 
         IEnumerable<SptLootItem>? items = spawnpoint.Template.Items;
         if (items is null) return false;
+
         foreach (SptLootItem item in items)
         {
             MongoId parentId = databaseService.GetItems().First(i => i.Value.Id == item.Template).Value.Parent;

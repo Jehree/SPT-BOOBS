@@ -1,15 +1,14 @@
-using Boobs.Models;
-using Boobs.Services;
+using BOOBS.Models;
+using BOOBS.Services;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Helpers;
-using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Utils;
 using SPTarkov.Server.Core.Services;
 using System.Reflection;
 using Path = System.IO.Path;
 
-namespace Boobs;
+namespace BOOBS.Core;
 
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class Mod(
@@ -57,13 +56,13 @@ public class Mod(
     public bool SuccessfulDbValidation()
     {
         bool success = true;
-        List<TierCategory> allCats = [.. ConfigContainer.TiersDbAmmoBoxes.Categories, .. ConfigContainer.TiersDbLooseItems.Categories];
+        List<TierCategory> allTierCategories = [.. ConfigContainer.TiersDbAmmoBoxes.Categories, .. ConfigContainer.TiersDbLooseItems.Categories];
 
-        foreach (TierCategory cat in allCats)
+        foreach (TierCategory cat in allTierCategories)
         {
-            foreach (var tier in cat.Tiers)
+            foreach (List<string> tier in cat.Tiers.Values)
             {
-                foreach (string itemName in tier.Value)
+                foreach (string itemName in tier)
                 {
                     if (ItemNameExists(itemName)) continue;
 
@@ -89,19 +88,19 @@ public class Mod(
 
     public bool ItemNameExists(string name)
     {
-        foreach (var category in ConfigContainer.AmmoBoxDb)
+        foreach (List<AmmoBox> category in ConfigContainer.AmmoBoxDb.Values)
         {
-            foreach (AmmoBox box in category.Value)
+            foreach (AmmoBox box in category)
             {
                 if (box.BoxId == name) return true;
             }
         }
 
-        foreach (var category in ConfigContainer.LooseItemDb)
+        foreach (Dictionary<string, string> category in ConfigContainer.LooseItemDb.Values)
         {
-            foreach (var looseItem in category.Value)
+            foreach (string looseItem in category.Keys)
             {
-                if (looseItem.Key == name) return true;
+                if (looseItem == name) return true;
             }
         }
 
