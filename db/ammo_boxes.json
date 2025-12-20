@@ -641,6 +641,12 @@
             "BoxType": "Medium",
             "BulletId": "5e023e53d4353e3302577c4c",
             "BulletCount": 30
+        },
+        {
+            "BoxId": "7_62x51_M80A1",
+            "BoxType": "Medium",
+            "BulletId": "6768c25aa7b238f14a08d3f6",
+            "BulletCount": 25
         }
     ],
     "7_62x54R": [
@@ -961,6 +967,24 @@
             "BoxType": "Shell",
             "BulletId": "5d6e6a05a4b93618084f58d0",
             "BulletCount": 30
+        },
+        {
+            "BoxId": "20x70_TSSSLUG",
+            "BoxType": "Shell",
+            "BulletId": "660137d8481cc6907a0c5cda",
+            "BulletCount": 30
+        },
+        {
+            "BoxId": "20x70_DANGEROUSGAMESLUG",
+            "BoxType": "Shell",
+            "BulletId": "660137ef76c1b56143052be8",
+            "BulletCount": 30
+        },
+        {
+            "BoxId": "20x70_FLECHETTE",
+            "BoxType": "Shell",
+            "BulletId": "6601380580e77cfd080e3418",
+            "BulletCount": 30
         }
     ],
     "23x75": [
@@ -1027,6 +1051,32 @@
             "BoxType": "Medium",
             "BulletId": "66a0d1f88486c69fce00fdf6",
             "BulletCount": 30
+        }
+    ],
+    "50bmg": [
+        {
+            "BoxId": "50bmg_HP",
+            "BoxType": "Lapua",
+            "BulletId": "67d41936f378a36c4706eeb9",
+            "BulletCount": 25
+        },
+        {
+            "BoxId": "50bmg_M21",
+            "BoxType": "Lapua",
+            "BulletId": "67dc212493ce32834b0fa446",
+            "BulletCount": 20
+        },
+        {
+            "BoxId": "50bmg_M33",
+            "BoxType": "Lapua",
+            "BulletId": "67dc255ee3028a8b120efc48",
+            "BulletCount": 15
+        },
+        {
+            "BoxId": "50bmg_M903",
+            "BoxType": "Lapua",
+            "BulletId": "67dc2648ba5b79876906a166",
+            "BulletCount": 10
         }
     ],
     "Disk": [

@@ -24,9 +24,9 @@
             "Name": "Flares",
             "Type": "LooseItem",
             "Tiers": {
-                "Low": ["26x75_POISONGREEN", "26x75_WHITE", "26x75_YELLOW", "RSP-30_YELLOW"],
+                "Low": ["RSP-30_FIREWORK", "26x75_WHITE", "26x75_YELLOW", "RSP-30_YELLOW"],
                 "Medium": ["26x75_GREEN", "RSP-30_GREEN", "RSP-30_YELLOW_SPECIAL"],
-                "High": ["26x75_RED", "RSP-30_RED", "RSP-30_BLUE"]
+                "High": [ "26x75_RED", "RSP-30_RED", "RSP-30_BLUE", "26x75_POISONGREEN"]
             }
         }
     ]
