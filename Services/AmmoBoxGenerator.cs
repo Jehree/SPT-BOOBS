@@ -2,6 +2,7 @@ using BOOBS.Models;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Mod;
+using SPTarkov.Server.Core.Models.Utils;
 using SPTarkov.Server.Core.Services;
 using SPTarkov.Server.Core.Services.Mod;
 
@@ -11,7 +12,8 @@ namespace BOOBS.Services;
 public class AmmoBoxGenerator(
     CustomItemService customItemService,
     DatabaseService databaseService,
-    LocaleService localeService)
+    LocaleService localeService,
+    ISptLogger<AmmoBoxGenerator> logger)
 {
     public required ConfigContainer ConfigContainer { get; set; }
 
@@ -34,10 +36,12 @@ public class AmmoBoxGenerator(
     private void CreateAmmoBox(AmmoBox box)
     {
         Dictionary<string, string> locales = localeService.GetLocaleDb();
+        string caliberName = locales[$"{box.BulletId} Name"].Split(" ")[0].Replace("mm", "");
         string bulletShortName = locales[$"{box.BulletId} ShortName"];
         string bulletName = locales![$"{box.BulletId} Name"];
         string mongoId = ConfigContainer.MongoMappings[box.BoxId];
-        string boxDescription = $"Carboard box holding ${bulletShortName} rounds.";
+        string boxDescription = $"Carboard box holding {bulletName} rounds.";
+        string boxShortName = $"{bulletShortName} - {caliberName}";
         if (box.BoxId == "Disk")
         {
             boxDescription += " The disk ammo box is incredibly rare! You should probably keep it as a collectors item...";
@@ -60,8 +64,8 @@ public class AmmoBoxGenerator(
                 {
                     "en", new LocaleDetails
                     {
-                        Name = $"Carboard box holding ${bulletName} rounds",
-                        ShortName = bulletShortName,
+                        Name = boxDescription,
+                        ShortName = boxShortName,
                         Description = boxDescription
                     }
                 }
